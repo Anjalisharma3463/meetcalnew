@@ -1,4 +1,4 @@
-import CareerGuidance from "@/components/CareerGuidance";
+import { CareerGuidance } from "@/components/CareerGuidance";
 import RichTextEditor from "@/components/textArea";
 export default function MessagePage() {
     return (

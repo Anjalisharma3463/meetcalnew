@@ -1,4 +1,4 @@
-import CareerGuidance from "@/components/CareerGuidance";
+import { CareerGuidance } from "@/components/CareerGuidance";
 import SlotComponent from "@/components/SlotComponent";
 const home = () => { 
     return (
