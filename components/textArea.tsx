@@ -1,37 +1,38 @@
 "use client";
 
-import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Heading from "@tiptap/extension-heading";
-import BulletList from "@tiptap/extension-bullet-list";
 import OrderedList from "@tiptap/extension-ordered-list";
 import Link from "@tiptap/extension-link";
+import Strike from "@tiptap/extension-strike";
+import BulletList from "@tiptap/extension-bullet-list";
 import Image from "@tiptap/extension-image";
-import Placeholder from "@tiptap/extension-placeholder";
 import Bold from "@tiptap/extension-bold";
 import Italic from "@tiptap/extension-italic";
-import Strike from "@tiptap/extension-strike";
+import { useEditor, EditorContent } from "@tiptap/react";
 import Underline from "@tiptap/extension-underline";
+import Placeholder from "@tiptap/extension-placeholder";
 import { useState, useEffect, useRef } from "react";
 import {
-  ChevronDown,
-  Bold as BoldIcon,
+ 
   Italic as ItalicIcon,
   Underline as UnderlineIcon,
+  Bold as BoldIcon,
   Strikethrough as StrikethroughIcon,
   List as ListIcon,
-  ListOrdered as ListOrderedIcon,
-  Link as LinkIcon,
   Image as ImageIcon, 
-  Smile as SmileIcon,
+  Link as LinkIcon,
+  ListOrdered as ListOrderedIcon,
+  
   AlignLeft,
   Trash2,
+  ChevronDown,
   MoreVertical,
 } from "lucide-react"; 
 import {
-  Popover,
-  PopoverContent,
+  Popover,  
   PopoverTrigger,
+  PopoverContent,
 } from "@/components/ui/popover";
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6;
