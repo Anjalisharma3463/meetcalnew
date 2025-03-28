@@ -3,8 +3,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Clock, IndianRupee, MessageSquareText, Video, ArrowLeft, ShieldCheck } from "lucide-react"; 
-import { usePathname, useRouter } from "next/navigation";
-import TimezoneDropdown from "./TimezoneDropdown";
+import { usePathname, useRouter } from "next/navigation";  
 export function CareerGuidance() {
   const router = useRouter();
   const pathname = usePathname(); 
@@ -79,8 +78,7 @@ export function CareerGuidance() {
           </div>
         </div>
       </Card>
-
-      <TimezoneDropdown/>
+ 
     </>
   );
 }
