@@ -126,7 +126,7 @@ export default function MentorsPage() {
        
 
         {/* Filters */}
-        <div className="flex  sm:w-full h-[80px] bg-white  items-center justify-around mb-6">
+        <div className="flex flex-col md:flex-row py-2 gap-2 md:w-full h-[80px] bg-white  items-center justify-around mb-6">
 
            {/* Search Input */}
         <div  className='w-[352px]'>
@@ -137,7 +137,7 @@ export default function MentorsPage() {
            
           />
         </div>
-       <div className='flex space-x-3'>
+       <div className='flex space-x-1'>
 
           <DropdownFilter 
             title="Role"
@@ -167,7 +167,7 @@ export default function MentorsPage() {
             </div>
 
         {/* Mentors Grid */}
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center  mx-2 items-center flex-col">
           {sortedMentors.map(mentor => (
             <MentorCard key={mentor.id} mentor={mentor} />
           ))}

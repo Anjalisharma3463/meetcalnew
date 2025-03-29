@@ -18,9 +18,9 @@ const MentorCard: React.FC<{ mentor: Mentor }> = ({ mentor }) => {
   const router = useRouter();
 
   return (
-    <div className="bg-white border w-90 sm:w-full h-fit rounded-lg p-4 flex flex-col sm:flex-row items-start space-x-4   ">
+    <div className="bg-white border w-90 md:w-full h-fit rounded-lg p-4 flex flex-col md:flex-row items-start space-x-4   ">
       {/* Profile Image */}
-      <div className="w-70 h-55 sm:w-35 sm:h-35 flex-shrink-0 relative">
+      <div className="w-70 h-55 md:w-35 md:h-35 flex-shrink-0 relative">
         <Image 
           src={profile} 
           alt={mentor.name} 
@@ -49,7 +49,7 @@ const MentorCard: React.FC<{ mentor: Mentor }> = ({ mentor }) => {
 
         </div>
  
-        <p className="text-xs bg-[#CBD5E1] w-fit h-fit sm:h-22  rounded-md p-2 text-gray-500 mb-2">
+        <p className="text-xs bg-[#CBD5E1] w-fit h-fit sm:h-20  rounded-md p-2 text-gray-500 mb-2">
           PM @Bytespectrum || iCloud @Google || XML summer @Amazon || DSA || Team Development || Growth Management || Full Stack Developer(MERN) || Full Stack Developer
         </p>
 
