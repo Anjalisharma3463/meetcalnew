@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
   const [activeItem, setActiveItem] = useState('Mentor')
 
   return (
-    <div className="w-[197px] bg-[#F8FAFC] border-r border-gray-200 h-screen py-6 px-4">
+    <div className="w-[197px] bg-[#F8FAFC] border-r  mt-13 border-gray-200 h-screen py-6 px-4">
       <div className="flex flex-col space-y-2">
         {sidebarItems.map((item) => (
           <button 

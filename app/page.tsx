@@ -96,9 +96,9 @@ export default function MentorsPage() {
   }
 
   return (
-    <div className="container pb-8">
+    <div className="container  h-fit pb-8">
       {/* Header */}
-      <div className='w-full h-[64px] bg-[#E5E7EB]'>
+      <div className='w-full h-[64px] bg-[#dbeafe]'>
         <div className='flex justify-around items-center h-full'> 
           <h1 className="text-3xl font-semibold">Mentors</h1>
  
@@ -126,7 +126,7 @@ export default function MentorsPage() {
        
 
         {/* Filters */}
-        <div className="flex w-full h-[80px] bg-white  items-center justify-around mb-6">
+        <div className="flex  sm:w-full h-[80px] bg-white  items-center justify-around mb-6">
 
            {/* Search Input */}
         <div  className='w-[352px]'>
@@ -167,7 +167,7 @@ export default function MentorsPage() {
             </div>
 
         {/* Mentors Grid */}
-        <div className="flex flex-col">
+        <div className="flex justify-center items-center flex-col">
           {sortedMentors.map(mentor => (
             <MentorCard key={mentor.id} mentor={mentor} />
           ))}

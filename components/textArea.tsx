@@ -61,8 +61,7 @@ const RichTextEditor = ({
       name: string;
     }>
   >([]);
-
-  const [showUploadFailToast, setShowUploadFailToast] = useState(false);
+ 
 
   const editor = useEditor({
     extensions: [
@@ -420,10 +419,7 @@ const RichTextEditor = ({
     input.onchange = (event) => {
       const files = (event.target as HTMLInputElement).files;
       if (files && files.length > 0) {
-        if (uploadedImages.length + files.length > 3) {
-          setShowUploadFailToast(true);
-          return;
-        }
+     
 
         const newImages = Array.from(files).map((file) => {
           const imageUrl = URL.createObjectURL(file);
